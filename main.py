@@ -1,5 +1,7 @@
 import csv
 
+# 신재원 바보
+
 # https://www.cpubenchmark.net/
 
 # CPU
