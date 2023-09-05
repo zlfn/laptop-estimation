@@ -45,7 +45,7 @@ print(header)
 f = open('laptops_data.csv', 'w', newline='')
 wr = csv.writer(f)
 
-wr.writerow(["Status", "CPU", "RAM", "Storage", "Storage type", "GPU", "Screen", "Touch", "Final Price"])
+wr.writerow(["Status", "CPU", "RAM", "Storage", "GPU", "Screen", "Touch", "Final Price"])
 
 for row in data:
     new_row = []
@@ -80,12 +80,7 @@ for row in data:
         continue
 
     # Storage Type
-    if row[7] == "HDD":
-        new_row.append(0)
-    elif row[7] == "SSD":
-        new_row.append(1)
-    else:
-        continue
+    print(row[7])
 
     # GPU
     if row[8] in gpu:
